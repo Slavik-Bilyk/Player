@@ -1,15 +1,16 @@
-import React from 'react'
+import React from 'react';
+import './Videolist.css';
 
-const Videolist = ({videos, onSelect}) => {
+const Videolist = ({ videos, onSelect }) => {
   return (
-    <ul>
-        {videos.map(video => (
-            <li key={video.id} onClick={() => onSelect(video.link)}>
-                {video.link}
-            </li>
-        ))}
+    <ul className="VideoList">
+      {videos.map(video => (
+        <li key={video.id} className="VideoListItem" onClick={() => onSelect(video.link)}>
+          {video.link}
+        </li>
+      ))}
     </ul>
-  )
+  );
 }
 
-export default Videolist
+export default Videolist;

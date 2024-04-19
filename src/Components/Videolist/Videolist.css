@@ -1,0 +1,17 @@
+
+.VideoList {
+  list-style: none;
+  padding: 0;
+}
+
+.VideoListItem {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.VideoListItem:hover {
+  background-color: #f0f0f0;
+}
